@@ -1,26 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>For You ❤️</title>
-<link rel="stylesheet" href="style.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love ❤️</title>
 
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-<audio id="bgMusic" loop>
-    <source src="music/girl.mp3">
+    <!-- Floating Hearts -->
+    <div class="hearts">
+        <span>❤️</span>
+        <span>💖</span>
+        <span>💕</span>
+        <span>💗</span>
+        <span>❤️</span>
+    </div>
+
+<div class="container">
+	<audio id="bgMusic" loop>
+    <source src="music/girl.mp3" type="audio/mpeg">
 </audio>
 
-<button onclick="toggleMusic()">🎵 Play Music</button>
+    <button onclick="toggleMusic()" id="musicBtn">
+        🎵 Play Music
+    </button>
 
-<h1>To My Love ❤️</h1>
+    <img src="images/sandra.jpeg" class="photo" alt="Our Photo">
 
-<p id="letter"></p>
+    <h1>To Sandra ❤️</h1>
 
-<button onclick="showLove()">Click Me ❤️</button>
-<p id="surprise"></p>
+    <p id="letter"></p>
+
+</div>
 
 <script src="script.js"></script>
 
 </body>
-</html>
