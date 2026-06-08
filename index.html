@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>💖</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="box">
+    <h2>Kamu udah sayang sama aku atau belum??</h2>
+
+    <button onclick="goYes()">Udah 💖</button>
+    <button onclick="runAway()">Belum 😤</button>
+</div>
+
+<script>
+function goYes(){
+    window.location.href = "main.html";
+}
+
+function runAway(){
+    const box = document.querySelector(".box");
+
+    box.style.position = "absolute";
+    box.style.left = Math.random() * 80 + "%";
+    box.style.top = Math.random() * 80 + "%";
+}
+</script>
+
+</body>
+</html>
