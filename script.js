@@ -19,24 +19,47 @@ I will always choose you.
 
 `;
 
-let i = 0;
+let index = 0;
 
 function typeWriter(){
-    if(i < text.length){
-        document.getElementById("letter").innerHTML += text[i];
-        i++;
-        setTimeout(typeWriter, 50);
+
+    const letter = document.getElementById("letter");
+
+    if(index === 0){
+        letter.innerHTML = ""; // important reset
+    }
+
+    if(index < text.length){
+
+        letter.innerHTML += text.charAt(index);
+        index++;
+
+        setTimeout(typeWriter, 40);
     }
 }
 
 window.onload = typeWriter;
-
 function toggleMusic(){
+
     const music = document.getElementById("bgMusic");
-    music.play();
+    const btn = document.getElementById("musicBtn");
+
+    if(music.paused){
+
+        music.play();
+
+        btn.innerHTML = "⏸ Pause Music";
+
+    }else{
+
+        music.pause();
+
+        btn.innerHTML = "🎵 Play Music";
+    }
 }
 
 function showLove(){
+
     document.getElementById("surprise").innerHTML =
-    "I Love Youuuuu ❤️";
+    "I Love Youuuuu Sandraaa ❤️❤️❤️";
 }
