@@ -63,3 +63,9 @@ function showLove(){
     document.getElementById("surprise").innerHTML =
     "I Love Youuuuu Sandraaa ❤️❤️❤️";
 }
+
+function openGallery(){
+
+    window.location.href = "gallery.html";
+
+}
